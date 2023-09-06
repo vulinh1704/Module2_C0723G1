@@ -145,19 +145,38 @@ public class Demo {
         System.out.println("Số vừa nhập là: " + a);
          */
 
-        Scanner inputNumber = new Scanner(System.in);
-        Scanner inputString = new Scanner(System.in);
+//        Scanner inputNumber = new Scanner(System.in);
+//        Scanner inputString = new Scanner(System.in);
+//
+//        System.out.println("Nhập tuổi: ");
+//
+//        double f = Math.sqrt(5.6);
+//
+//
+//        int age = inputNumber.nextInt(); //"/n"
+//
+//        System.out.println("Nhập tên: ");
+//        String name = inputString.nextLine(); // ""
+//        System.out.println("Tên bạn là : " + name + " | Tuổi bạn là: " + age);
 
-        System.out.println("Nhập tuổi: ");
-        int age = inputNumber.nextInt(); //"/n"
+//        Scanner input = new Scanner(System.in);
+//        System.out.println("Nhập a");
+//        int a = input.nextInt();
+//        input.nextLine();
+//        System.out.println("Nhập b");
+//        String b = input.nextLine();
+//        float f = 5.6f;
 
-        System.out.println("Nhập tên: ");
-        String name = inputString.nextLine(); // ""
+//        System.out.println(false & true);
+//        System.out.println(true | false);
 
 
+        if(5 < 4) {
+            System.out.println("Linh");
+        } else {
+            System.out.println("Hồng");
+        }
 
-        System.out.println("Tên bạn là : " + name + " | Tuổi bạn là: " + age);
+
     }
-
-
 }
