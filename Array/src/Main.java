@@ -1,5 +1,3 @@
-import javax.crypto.spec.PSource;
-import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -139,6 +137,56 @@ class Main4 {
         return -1;
     }
 
+}
+
+class Main5 {
+    public static void main(String[] args) {
+        // Nhập vào một mảng và thêm các phần tử vào sau đó đảo ngược các phần tử.
+        Scanner input = new Scanner(System.in);
+        System.out.println("Nhập vào độ dài của mảng: ");
+        int length = input.nextInt();
+        int[] arr = new int[length];
+        int size = 0;
+
+        while (size < arr.length) { //
+            System.out.println("Nhâp vào phần tử thứ: " + size); // 1
+            int element = input.nextInt(); // 5 7
+            arr[size] = element; // arr[0] = 5; arr[1] = 7
+            size++; // size = 1
+        }
+        System.out.println("Mảng trước khi đảo: ");
+        System.out.println(Arrays.toString(arr));
+
+        // arr [1,4,6,7,9]
+        int[] newArr = new int[length];
+        int newSize = 0;
+        for (int i = arr.length - 1; i >= 0; i--) {
+            newArr[newSize] = arr[i]; // newSize = 0 => newArr[0] = 9
+            newSize++;
+        }
+
+        System.out.println("Mảng sau khi đảo: ");
+        System.out.println(Arrays.toString(newArr));
+    }
+}
+
+class Main6 {
+    public static void main(String[] args) {
+        int[] arr = {1,4,6,7};
+        for (int y: arr) {
+            System.out.println(y);
+        }
+        String[] a = {"Jonh", "Mary", "Caly", "Tomy"};
+        Arrays.sort(a);
+        System.out.println(Arrays.toString(a));
+    }
+    static int m(int ...x) {
+        int b = 0;
+        for(int a:x){
+            b+=a;
+        }
+        return b;
+    }
 }
 
 
