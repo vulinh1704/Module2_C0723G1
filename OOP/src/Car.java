@@ -14,6 +14,7 @@ public class Car {
     }
 }
 
+
 class Main2 {
     public static void main(String[] args) {
         Car oto1 = new Car("Mec", "Đỏ", 23.4);
