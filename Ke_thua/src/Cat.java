@@ -5,7 +5,6 @@ public class Cat extends Animal {
     public Cat(String name, int age, String color) {
         super(name, age);
         this.color = color;
-        this.name = "Ning";
     }
 
     //super() Gọi đến constructor có tham số tương ứng của lớp cha.

@@ -3,15 +3,17 @@ public class Animal {
     protected int age;
 
     public Animal(String name, int age) {
-        this.name = name;
+        this();
         this.age = age;
     }
 
-    //this(name); // Sử dụng để gọi đến constructor tương ứng.
+
     public Animal() {
-        System.out.println("Constructor Empty");
+        this.name = "Ning";
     }
 
+
+    //this(name); // Sử dụng để gọi đến constructor tương ứng.
     public Animal(String name) {
         this.name = name;
     }
