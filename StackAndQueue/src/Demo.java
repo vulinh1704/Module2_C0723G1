@@ -59,3 +59,15 @@ public class Demo {
         System.out.println(dequeue.peek());
     }
 }
+
+class Main {
+    public static void main(String[] args) {
+        HashMap<Integer, Integer> a = new HashMap<>();
+        a.put(4, 56);
+        a.put(1, 100);
+        a.put(9, 78);
+        System.out.println(a);
+        a.replace(9, 0);
+        System.out.println(a);
+    }
+}
