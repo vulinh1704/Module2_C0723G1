@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+    let arr = [1, 5, 3, 2, 6, 7];
+    // for (let i = 1; i < arr.length; i++) {
+    //     for (let j = 0; j < arr.length - i; j++) {
+    //         if(arr[j] > arr[j + 1]) {
+    //             let temp = arr[j];
+    //             arr[j] = arr[j + 1];
+    //             arr[j + 1] = temp;
+    //         }
+    //     }
+    // }
+
+    // for (let i = 0; i < arr.length; i++) {
+    //     let min = i;
+    //     for (let j = i + 1; j < arr.length; j++) {
+    //         if(arr[j] < arr[min]) {
+    //             min = j;
+    //         }
+    //     }
+    //     let tem = arr[i];
+    //     arr[i] = arr[min];
+    //     arr[min] = tem;
+    // }
+
+    for (let i = 1; i < arr.length; i++) {
+        for (let j = i; j >= 0; j--) {
+            if(arr[j] < arr[j - 1]){
+                let temp = arr[j];
+                arr[j] = arr[j - 1];
+                arr[j - 1] = temp;
+            }
+        }
+    }
+    console.log(arr)
+</script>
+</body>
+</html>
