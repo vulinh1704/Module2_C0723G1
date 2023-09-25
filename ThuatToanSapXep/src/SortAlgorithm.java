@@ -6,6 +6,8 @@ public class SortAlgorithm {
 //        bubbleSort();
 //        selectionSort();
         insertSort();
+        a();
+
     }
 
 
@@ -51,6 +53,22 @@ public class SortAlgorithm {
             }
         }
         System.out.println(Arrays.toString(numbers));
+    }
+
+
+    public static void a() {
+
+        int a = 234;
+        int b = 192;
+        int soDu = a % b;
+        while (soDu != 0) {
+            a = b;
+            b = soDu;
+            soDu = a % b;
+        }
+        System.out.println("Ước chung lớn nhất: " + b);
+
+
     }
 
 }
